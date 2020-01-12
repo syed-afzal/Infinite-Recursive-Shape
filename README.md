@@ -54,3 +54,5 @@ Steps to start app are as follows:
 - (Width: 80, Height:100, padding: 20)
 
   ![image](80_100_20.png)
+
+  ## Big O is O(<N) 
