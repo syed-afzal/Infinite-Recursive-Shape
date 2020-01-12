@@ -57,4 +57,4 @@ Steps to start app are as follows:
 
   ## Big O 
   
-  The Big O of this application __O(n log(n))__
+  The Big O of this application __O(n)__, because I have to draw the shapes which are in array of n length and for that function is __log(n)__
