@@ -26,14 +26,14 @@ var vm = new Vue({
             }
 
             // this metod gives you the cordinates 2D array
-            const pixelArray  = this.makeShape(this.width, this.height , this.padding);
+            const pixelArray  = this.makeShape(+this.width, +this.height , +this.padding);
 
             // we used pre selector for diplaying shapes
             const output = document.querySelector("pre");
 
             // the final output of shapes goes from this line by looping all rows
-            output.textContent = pixelArray .map(row => row.map(i => " -|"[i]).join``).join`\n`;
-
+            output.textContent = pixelArray.map(row => 
+                row.map((item, index) => (index === 0 || index === row.length -1) ? "|" : " -|"[item]).join``).join`\n`;
         },
 
         // this method is used for not allowing user to do input string and non-numeric values in height, width and padding
