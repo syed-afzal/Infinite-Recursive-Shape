@@ -57,4 +57,4 @@ Steps to start app are as follows:
 
   ## Big O 
   
-  The Big O of this application __O(<n)__
+  The Big O of this application __O(n log(n))__
