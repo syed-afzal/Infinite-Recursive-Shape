@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recursive Shape</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/logo.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="row padding-20">
+            <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                    <label for="width">Width</label>
+                    <input
+                            @keypress="onlyNumber"
+                            type="text"
+                            v-model="width"
+                            class="form-control">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                    <label for="height">Height</label>
+                    <input
+                            @keypress="onlyNumber"
+                            type="text"
+                            v-model="height"
+                            class="form-control">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                    <label for="padding">Padding</label>
+                    <input
+                            @keypress="onlyNumber"
+                            type="text"
+                            v-model="padding"
+                            class="form-control">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-position" @click="drawShape">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-20">
+            <h1>Your Desired Shape</h1>
+
+            <div class="col-md-12 col-lg-12" id="shape">
+                <pre>
+
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
