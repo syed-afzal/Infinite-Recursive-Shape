@@ -55,4 +55,6 @@ Steps to start app are as follows:
 
   ![image](80_100_20.png)
 
-  ## Big O is O(<N) 
+  ## Big O 
+  
+  The Big O of this application __O(<n)__
