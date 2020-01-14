@@ -35,7 +35,7 @@ Steps to start app are as follows:
 - Run `npm start`.
 - It will start your application and you will see this on the command line 
 ``Server is up on port 3003`` 
-- Go to the browser and hit ``localhost:30030``, it will open your application
+- Go to the browser and hit ``localhost:3003``, it will open your application
 
 ## How to test the application works fine :question:
 
